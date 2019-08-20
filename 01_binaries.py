@@ -14,7 +14,7 @@ def find_divisible_numbers(divisor, base):
             for j in range(len(single_num)):
                 result = result + int(single_num[j])*(base**(len(single_num)-j-1))
             if (result%divisor)==0:
-                print(f"{result}", end = ', ')
+                print(result, end = ', ')
             single_num = []
         if l == "0" or l == "1": single_num.append(l)
     return resulting_list
